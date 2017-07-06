@@ -1,10 +1,8 @@
 function Menu(sSelector, sMenutype, bToggle){
-	
 	var m = this;
 	
 	m.menu = $(sSelector); // наш ul
-	m.menuItem = m.menu.find("li");	
-	
+	m.menuItem = m.menu.find("li");		
 
 	m.showHideSubmenu = function(event){ 
 		event.preventDefault(); 
@@ -15,19 +13,19 @@ function Menu(sSelector, sMenutype, bToggle){
 		$(this).children("ul").stop().slideToggle();
 		console.log("ok");
 		}
-
 		
 		if(sMenutype == "accordion"){
 		//m.menuItem.css("display", "block");
 		//m.menuItem.children("ul").css("position", "static");
-		m.menuItem.click(m.showHideSubmenu);
-		
+		m.menuItem.click(m.showHideSubmenu);		
 		}
 		else if(sMenutype == "drop-down"){
 		m.menuItem.mouseover(m.showSubmenu); 
 		m.menuItem.mouseout(m.hideSubmenu);
 		}
-}
+}	
+
+
 
 
 function Slider(sSelector){
@@ -55,28 +53,8 @@ function Slider(sSelector){
 		// console.log(s.current);
 	}
 	
-	$(document).ready(s.load); // при загрузки страницы - метод load
+	$(document).ready(s.load); // при загрузке страницы - метод load
 	
 }
-/*
-var chet = 1;
-			window.onload = function () { setTimeout(frout, 5000); }
-			function frout() {
-			chet++;
-			if (chet>3) {chet=0;}
-				switch(chet) {
-				case 1:
-					document.getElementById('img').src = "images/1.jpg";
-					break;
-				case 2:
-					document.getElementById('img').src = "images/2.jpg";
-					break;
-				case 3:
-					document.getElementById('img').src = "images/3.jpg";
-					break;
-				}
-			setTimeout(frout, 5000);
-			}
-			*/
-	
+
 	

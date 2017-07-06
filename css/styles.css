@@ -6,7 +6,7 @@ html {
     padding: 0;
 }
 body {
-    /*! background: rgba(0, 0, 0, 0) url("../1.jpg") no-repeat scroll center top; */
+    /*! background: rgba(0, 0, 0, 0) url("../1.jpg") no-repeat scroll center top; */ 
     font-family: "Open Sans";
     font-size: 10px;
     margin: 0;
@@ -29,6 +29,7 @@ body {
 .header__logo {
     display: inline-block;
     vertical-align: top;
+    margin-left: 95px;
 }
 .logo {
     display: inline-block;
@@ -39,7 +40,7 @@ body {
 }
 .header__menu {
     display: inline-block;
-    margin-left: 200px;
+    margin-left: 72px;
     margin-top: 10px;
     padding-right: 30px;
     vertical-align: top;
@@ -94,26 +95,40 @@ body {
 	color:#b7b7b7;
     
 }
+
 .header__login {
     display: inline-block;
     font-weight: 600;
-    margin-left: 24px;
+    margin-left: 25px;
     margin-top: 5px;
     vertical-align: top;
 }
-.btn {
-    background: #bcda5c none repeat scroll 0 0;
-    border: 0 none;
-    border-radius: 34px;
+.header__login_btn{
+	background: #bcda5c none repeat scroll 0 0;
+    border-radius: 30px;
     color: #f3f8e6;
+    display: inline-block;
     font-size: 1.32rem;
-    height: 40px;
-    text-transform: uppercase;
+    height: 37px;
+    line-height: 37px;
+    margin: 1px auto;
+    text-decoration: none;
     width: 100px;
+	text-transform: uppercase;
+	text-align: center;
 }
-.btn_login {
-    font-weight: 600;
+
+
+
+
+
+
+
+.placeholder {
+    color: #444;
 }
+
+
 .container__slider {
     margin: 0 auto;
 }
@@ -223,7 +238,7 @@ body {
 
 .tabs__tab {
     display: inline-block;
-    margin-right: 13%;
+    margin-right: 12%;
     text-decoration: none;
     padding-bottom: 36px;
 }
@@ -441,9 +456,62 @@ body {
     text-align: center;
     color: #848484;
 }
+
+.container__window {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    display: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: 9999;
+}
+.window {
+	padding: 10px;
+}
+.container__window-avail {
+    bottom: 0;
+    height: 250px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 300px;
+}
+.window-avail {
+    background: #fff none repeat scroll 0 0;
+    font-family: HelveticaThin;
+    height: 100%;
+}
+.window-avail__heading {
+}
+.avail-heading {
+    background: #dbdbdb none repeat scroll 0 0;
+    color: #404040;
+    font-size: 1rem;
+    height: 35px;
+    line-height: 35px;
+}
+.avail-heading__text {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+.avail-heading__close{
+	
+    display: inline-block;
+    margin: 0 0 0 15px;
+    vertical-align: top;
+}
+.window-avail__content{padding: 10px;}
+.vail-content{}
+.slick-login{}
+
 @media screen and (max-width:980px){
   body{
-    /* background-color:red; */
+   
   }
  .container{
    padding: 0 10px;

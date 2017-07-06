@@ -4,232 +4,251 @@
 		
 		<meta charset="utf-8">
 		<title>icrowdme</title>
-		<link rel='stylesheet' href='css/styles.css'>	
+		<link rel='stylesheet' href='css/styles.css'>		
 
 	</head>
 	<body>
 		<div class="container">
-			<div class="container__header"> <!-- элемент-место -->
-				<header class="header"> <!-- блок -->
-					<div class="header__logo"> <!-- элемент-место -->
-						<div class="logo"> <!-- блок -->
-							<a href="#" class="logo__link"><img src="images/headerLogo.png" alt="" class="logo__img"></a> <!-- атомарные элементы -->
-						</div>
-					</div>
-					<div class="header__menu"> <!-- элемент-место -->
-						<ul class="menu" id="menu1">
-							<li class="menu__item"><a href="#" class="menu__link">HOME</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">HOW IT WORKS</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">DISCOVER A PROJECT</a>
-								<ul class="submenu">
-									<li class="submenu__item"><a href="#" class="submenu__link">DISCOVER A PROJECT</a></li>
-									<li class="submenu__item"><a href="#" class="submenu__link">DISCOVER A PROJECT</a></li>
-									<li class="submenu__item"><a href="#" class="submenu__link">DISCOVER A PROJECT</a></li>
-								</ul>
-							</li>	
-							<li class="menu__item"><a href="#" class="menu__link">BLOG</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">FIND OUT MORE</a></li>
-						</ul>
-					</div>
-					<div class="header__login">
-						<button class="btn btn_login">login</button>
-					</div>
-				</header>
-			</div>
-			
-			<div class="container__slider">
-				<div class="slider" id="slider1">
-					<div class="slider__slide">
-						<div class="slide">
-							<img src="images/1.jpg" class="slide__img" id="img">	
-							<div class="slide__info">
-								<div class="slide__slogan">Intellectual Property has the Shelf Life</div>
-								<p class="slide__text">of a Banana.</p>
-								<a href="#" class="slide__link">Become a Member</a>
-							</div>	
-						</div>
+			<header class="header"> 
+				<div class="header__logo"> 
+					<div class="logo"> 
+						<a href="#" class="logo__link"><img src="images/headerLogo.png" alt="" class="logo__img"></a> 
 					</div>
 				</div>
-			</div>
-			
-			<div class="container__section container__presentation"> <!-- открылся section -->
-				<div class="section presentation">
-					<img src="images/icons/circle.png" alt="" class="presentation__icon">
-					<h2 class="presentation__slogan">Our work is the presentation <br>of our capabilities.</h2>
-
-					<div class="presentation__text">
-						<article class="article-text">
-							<p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
-							<p class="second">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vo-<br>luptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-						</article>
-					</div>
-					<div class="section__tabs">
-						<div class="tabs">
-							<div class="tabs__menu">
-								<div class="tabs-menu">
-									<a href="#" class="tabs__tab tabs__tab_current">
-										<div class="tab__icon tab__icon_current">1</div>
-										<div class="tab__text">Simple</div									
-									</a>
-									<a href="#" class="tabs__tab">
-										<div class="tab__icon">2</div>
-										<div class="tab__text">Transparent</div>
-										
-									</a>
-									<a href="#" class="tabs__tab">
-										<div class="tab__icon">3</div>
-										<div class="tab__text">Collaborative</div>
-										
-									</a>
-								</div>
-							</div>
-							
-							<div class="tabs__content">
-								<div class="tabs-content">
-									<img src="images/icons/glasses.png" alt="" class="tabs-content__img">
-										
-									<div class="tabs-content__text">
-										<div class="tabs-text">
-											<h4 class="tabs-text__headline">Browse projects, like booking a hotel online !</h4>
-											<p class="tabs-text__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
+				<div class="header__menu"> 
+					<ul class="menu" id="menu1">
+						<li class="menu__item"><a href="#" class="menu__link">HOME</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">HOW IT WORKS</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">DISCOVER A PROJECT</a>
+							<ul class="submenu">
+								<li class="submenu__item"><a href="#" class="submenu__link">DISCOVER A PROJECT</a></li>
+								<li class="submenu__item"><a href="#" class="submenu__link">DISCOVER A PROJECT</a></li>
+								<li class="submenu__item"><a href="#" class="submenu__link">DISCOVER A PROJECT</a></li>
+							</ul>
+						</li>	
+						<li class="menu__item"><a href="#" class="menu__link">BLOG</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">FIND OUT MORE</a></li>
+					</ul>
+				</div>
+				<div class="header__login">
+					<a href="#dialog" name="modal" class="header__login_btn">login</a>						
 				</div>				
-			</div> <!-- закрылся section -->				
-						
-			<div class="container__section2 container__projects">  <!-- открылся section2 -->
-				<div class="section2">
-					<div class="section2__row2">
-						<div class="row2">
-							<div class="row2__info">
-								<div class="info">
-									<h3>Featured Projects</h3>
-									<p>Brief details of new and popular projects. To view full listings, you will be required to sign up and become a member.</p>
-								</div>
-							</div>
-							<div class="row2__participate">
-								<div class="participate">
-									<button class="btn btn_member">Become A Member</button>
-								</div>
-							</div>
-						</div>						
-					</div>
-					
-					<div class="section2__projects">
-						<div class="projects">
-							<div class="projects__pr"> <!-- начало проекта 1-->
-								<div class="pr">
-									<div class="pr__visualization">
-										<div class="visualization">
-											<div class="picture">
-												<img src="images/icons/new.png" alt="" alt="new">
-												<a href="#" class="picture__link">From GBP  3600</a>
-											</div>
-										</div>
-									</div>								
-									<div class="pr__description">
-										<div class="description">
-											<h5>Ontario Tower , LONDON</h5>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-										<hr>
-										</div>		
-										<div class="details">
-											<span>See Project Details</span>
-											<a href="#"><img src="images/icons/arrow.png" alt="arrow"></a>
-										</div>
-									</div>
-								</div>
-							</div>  <!-- конец проекта 1-->
-							
-							<div class="projects__pr"> <!-- начало проекта 2-->
-								<div class="pr">
-									<div class="pr__visualization">
-										<div class="visualization">
-											<div class="picture picture2">
-												<img src="images/icons/new.png" alt="" alt="new">
-												<a href="#" class="picture__link">From GBP  3600</a>
-											</div>
-										</div>
-									</div>								
-									<div class="pr__description">
-										<div class="description">
-											<h5>Ontario Tower , LONDON</h5>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-										<hr>
-										</div>
-										<div class="details">
-											<span>See Project Details</span>
-											<a href="#"><img src="images/icons/arrow.png" alt="arrow"></a>
-										</div>
-									</div>
-								</div>
-							</div>  <!-- конец проекта 2-->
-							
-							<div class="projects__pr"> <!-- начало проекта 3-->
-								<div class="pr">
-									<div class="pr__visualization">
-										<div class="visualization">
-											<div class="picture">
-												<img src="images/icons/new.png" alt="" alt="new">
-												<a href="#" class="picture__link">From GBP  3600</a>
-											</div>
-										</div>
-									</div>								
-									<div class="pr__description">
-										<div class="description">
-											<h5>Ontario Tower , LONDON</h5>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-										<hr>
-										</div>
-										<div class="details">
-											<span>See Project Details</span>
-											<a href="#"><img src="images/icons/arrow.png" alt="arrow"></a>
-										</div>
-									</div>
-								</div>
-							</div>  <!-- конец проекта 3-->							
-						</div>
-					</div>
-				</div>
-			</div>  <!-- закрылся section2 -->
+			</header>
+		</div>
 			
-			
-			<div class="container__footer">
-				<div class="footer">
-					<div class="footer__logo">
-						<div class="logo">
-							<a href="#" class="logo__link"><img src="images/icons/footer1.jpg" alt="" class="logo__img"></a>
-						</div>
-						<div class="logo">
-							<a href="#" class="logo__link"><img src="images/icons/footer2.jpg" alt="" class="logo__img"></a>
-						</div>
-						<div class="logo">
-							<a href="#" class="logo__link"><img src="images/icons/footer3.jpg" alt="" class="logo__img"></a>
-						</div>
-						<div class="logo">
-							<a href="#" class="logo__link"><img src="images/icons/footer4.jpg" alt="" class="logo__img"></a>
-						</div>
-						<div class="logo">
-							<a href="#" class="logo__link"><img src="images/icons/footer5.jpg" alt="" class="logo__img"></a>
-						</div>
-						<div class="logo">
-							<a href="#" class="logo__link"><img src="images/icons/footer6.jpg" alt="" class="logo__img"></a>
-						</div>
-						<div class="logo">
-							<a href="#" class="logo__link"><img src="images/icons/footer7.jpg" alt="" class="logo__img"></a>
-						</div>
-							<h5>Copyright © 2001 - 2014 Cssauthor.com</h5>
-						</div>
+		<div class="container__slider">
+			<div class="slider" id="slider1">
+				<div class="slider__slide">
+					<div class="slide">
+						<img src="images/1.jpg" class="slide__img" id="img">	
+						<div class="slide__info">
+							<div class="slide__slogan">Intellectual Property has the Shelf Life</div>
+							<p class="slide__text">of a Banana.</p>
+							<a href="#" class="slide__link">Become a Member</a>
+						</div>	
 					</div>
 				</div>
 			</div>
 		</div>
-		
+			
+		<div class="container__section container__presentation"> <!-- открылся section -->
+			<div class="section presentation">
+				<img src="images/icons/circle.png" alt="" class="presentation__icon">
+				<h2 class="presentation__slogan">Our work is the presentation <br>of our capabilities.</h2>
+
+				<div class="presentation__text">
+					<article class="article-text">
+						<p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+						<p class="second">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vo-<br>luptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+					</article>
+				</div>
+				<div class="section__tabs">
+					<div class="tabs">
+						<div class="tabs__menu">
+							<div class="tabs-menu">
+								<a href="#" class="tabs__tab tabs__tab_current">
+									<div class="tab__icon tab__icon_current">1</div>
+									<div class="tab__text">Simple</div>
+								</a>
+								<a href="#" class="tabs__tab">
+									<div class="tab__icon">2</div>
+									<div class="tab__text">Transparent</div>
+									
+								</a>
+								<a href="#" class="tabs__tab">
+									<div class="tab__icon">3</div>
+									<div class="tab__text">Collaborative</div>										
+								</a>
+							</div>
+						</div>
+						
+						<div class="tabs__content">
+							<div class="tabs-content">
+								<img src="images/icons/glasses.png" alt="" class="tabs-content__img">
+									
+								<div class="tabs-content__text">
+									<div class="tabs-text">
+										<h4 class="tabs-text__headline">Browse projects, like booking a hotel online !</h4>
+										<p class="tabs-text__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</div>
+								</div>
+							</div>
+						</div>							
+					</div>
+				</div>
+			</div>				
+		</div> <!-- закрылся section -->				
+						
+		<div class="container__section2 container__projects">  <!-- открылся section2 -->
+			<div class="section2">
+				<div class="section2__row2">
+					<div class="row2">
+						<div class="row2__info">
+							<div class="info">
+								<h3>Featured Projects</h3>
+								<p>Brief details of new and popular projects. To view full listings, you will be required to sign up and become a member.</p>
+							</div>
+						</div>
+						<div class="row2__participate">
+							<div class="participate">
+								<button class="btn btn_member">Become A Member</button>
+							</div>
+						</div>
+					</div>						
+				</div>
+				
+				<div class="section2__projects">
+					<div class="projects">
+						<div class="projects__pr"> <!-- начало проекта 1-->
+							<div class="pr">
+								<div class="pr__visualization">
+									<div class="visualization">
+										<div class="picture">
+											<img src="images/icons/new.png" alt="" alt="new">
+											<a href="#" class="picture__link">From GBP  3600</a>
+										</div>
+									</div>
+								</div>								
+								<div class="pr__description">
+									<div class="description">
+										<h5>Ontario Tower , LONDON</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<hr>
+									</div>		
+									<div class="details">
+										<span>See Project Details</span>
+										<a href="#"><img src="images/icons/arrow.png" alt="arrow"></a>
+									</div>
+								</div>
+							</div>
+						</div>  <!-- конец проекта 1-->
+						
+						<div class="projects__pr"> <!-- начало проекта 2-->
+							<div class="pr">
+								<div class="pr__visualization">
+									<div class="visualization">
+										<div class="picture picture2">
+											<img src="images/icons/new.png" alt="" alt="new">
+											<a href="#" class="picture__link">From GBP  3600</a>
+										</div>
+									</div>
+								</div>								
+								<div class="pr__description">
+									<div class="description">
+										<h5>Ontario Tower , LONDON</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<hr>
+									</div>
+									<div class="details">
+										<span>See Project Details</span>
+										<a href="#"><img src="images/icons/arrow.png" alt="arrow"></a>
+									</div>
+								</div>
+							</div>
+						</div>  <!-- конец проекта 2-->
+						
+						<div class="projects__pr"> <!-- начало проекта 3-->
+							<div class="pr">
+								<div class="pr__visualization">
+									<div class="visualization">
+										<div class="picture">
+											<img src="images/icons/new.png" alt="" alt="new">
+											<a href="#" class="picture__link">From GBP  3600</a>
+										</div>
+									</div>
+								</div>								
+								<div class="pr__description">
+									<div class="description">
+										<h5>Ontario Tower , LONDON</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<hr>
+									</div>
+									<div class="details">
+										<span>See Project Details</span>
+										<a href="#"><img src="images/icons/arrow.png" alt="arrow"></a>
+									</div>
+								</div>
+							</div>
+						</div>  <!-- конец проекта 3-->							
+					</div>
+				</div>
+			</div>
+		</div>  <!-- закрылся section2 -->
+			
+			
+		<div class="container__footer">
+			<div class="footer">
+				<div class="footer__logo">
+					<div class="logo">
+						<a href="#" class="logo__link"><img src="images/icons/footer1.jpg" alt="" class="logo__img"></a>
+					</div>
+					<div class="logo">
+						<a href="#" class="logo__link"><img src="images/icons/footer2.jpg" alt="" class="logo__img"></a>
+					</div>
+					<div class="logo">
+						<a href="#" class="logo__link"><img src="images/icons/footer3.jpg" alt="" class="logo__img"></a>
+					</div>
+					<div class="logo">
+						<a href="#" class="logo__link"><img src="images/icons/footer4.jpg" alt="" class="logo__img"></a>
+					</div>
+					<div class="logo">
+						<a href="#" class="logo__link"><img src="images/icons/footer5.jpg" alt="" class="logo__img"></a>
+					</div>
+					<div class="logo">
+						<a href="#" class="logo__link"><img src="images/icons/footer6.jpg" alt="" class="logo__img"></a>
+					</div>
+					<div class="logo">
+						<a href="#" class="logo__link"><img src="images/icons/footer7.jpg" alt="" class="logo__img"></a>
+					</div>
+					<div class="Copyright">
+						<h5>Copyright © 2001 - 2014 Cssauthor.com</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container__window">
+			<div class="window">
+				<div class="container__window-avail">
+					<div class="window-avail">
+						<div class="window-avail__heading">
+							<div class="avail-heading">
+								<div class="avail-heading__text">Вход зарегистрированного пользователя</div>
+								<a class="avail-heading__close" href="#"><img src="images/icons/close.png"></a>
+							</div>
+							<div class="window-avail__content">
+								<div class="avail-content">
+									<form id="slick-login">										
+										<label for="username">Логин:</label><input type="text" name="username" class="placeholder" placeholder="Ваш логин"><br><br>
+										<label for="password">Пароль:</label><input type="password" name="password" class="placeholder" placeholder="Ваш пароль"><br><br>
+										<input type="submit" value="ВОЙТИ">
+									</form>	
+								</div>							
+							</div>
+						</div>							
+					</div>
+				</div>							
+			</div>
+		</div>		
 		
 		
 		<script>
@@ -238,13 +257,14 @@
 		}*/	
 		</script>
 		<script src="scripts/jquery-3.1.1.min.js"></script>
-		<script src="scripts/script.js"></script>
+		<script src="scripts/script.js"></script>		
 		<script>
 			var menu1 = new Menu("#menu1", "accordion", true);
 			// или var menu1 = new Menu("#menu1", "drop-down");
 
-			var s1 = new Slider("#slider1");
+			var s1 = new Slider("#slider1");			
 		</script>
+		<script src="scripts/window.js"></script>		
 	</body>
 </html>
 
